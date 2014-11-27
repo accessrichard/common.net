@@ -4,7 +4,7 @@ common.net
 A random collection of common .net code.
 
 ### Structures/Tree
-A simple C# Tree Data structure.
+A simple C# tree data structure.
 
 See Tests\TreeTest for detailed example usage.
 
