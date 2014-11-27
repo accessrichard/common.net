@@ -10,12 +10,21 @@
     {
     
         private readonly Node<T> parent;
-
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="NodeList{T}"/> class.
+        /// </summary>
+        /// <param name="parent">The parent node.</param>
         public NodeList(Node<T> parent)
         {
             this.parent = parent;
         }       
 
+        /// <summary>
+        /// Adds a child to a tree node.
+        /// </summary>
+        /// <param name="value">The value of the node to add.</param>
+        /// <returns>The added node.</returns>
         public Node<T> Add(T value)
         {
             var node = new Node<T>(value) { Parent = this.parent };
